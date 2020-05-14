@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<html>
+<head>
+	<title>Memory Game</title>
+	<link href="MemoryGame.css" rel="stylesheet" type="text/css" />
+	<script src="MemoryGame.js"></script>
+</head>
+<body>
+	<div>
+	<label>How many sets of pictures?</label>
+		<select id="picNum">
+			<option selected="" value="16">8</option>
+			<option value="20">10</option>
+			<option value="24">12</option>
+		</select>&emsp;
+		
+		<label>Difficulty Level?</label>
+		<select id="difLevel">
+			<option>Easy</option>
+			<option>Hard</option>
+			<option>Ridiculous</option>
+		</select>&emsp;
+		<button class="center" onclick="newBoard()">New Game</button>
+	</div>
+	<div>
+		<p class="black">Once you have selected the number of pictures and difficulty level, you will have a few seconds to memorize the location of the tiles (time is dependent on difficulty level). Then the tiles will flip over and you will need to match the tiles with their corresponding image. Try to finish before the timer reaches zero. Good luck!</p>
+	</div>
+	<div>
+		<label id="timeLeft"></label>
+	</div>
+	<div id="memory_board"></div>
+</body>
+</html>
